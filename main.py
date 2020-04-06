@@ -14,6 +14,7 @@ def main():
         '--password', settings.PASSWORD,
         '--output-format', settings.OUTPUT_FORMAT,
         '--output', settings.OUTPUT,
+        '--verbose'
     ]
     det_folder = 'det_configs'
     for det_file in os.listdir(det_folder):
