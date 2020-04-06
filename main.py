@@ -14,6 +14,7 @@ def main():
         '--password', settings.PASSWORD,
         '--output-format', settings.OUTPUT_FORMAT,
         '--output', settings.OUTPUT,
+        '--batch-size', settings.BATCH_SIZE,
         '--verbose'
     ]
     det_folder = 'det_configs'
