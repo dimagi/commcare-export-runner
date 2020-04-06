@@ -15,9 +15,9 @@ def main():
         '--output-format', settings.OUTPUT_FORMAT,
         '--output', settings.OUTPUT,
     ]
-    filenames = ['leadership_governance.xlsx']
-    for det_file in filenames:
-        det_file_path = os.path.join('det_configs', det_file)
+    det_folder = 'det_configs'
+    for det_file in os.listdir(det_folder):
+        det_file_path = os.path.join(det_folder, det_file)
         command = base_command + ['--query', det_file_path]
         print(f"running {' '.join(command)}")
         subprocess.run(command)
