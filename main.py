@@ -13,6 +13,7 @@ def main():
         '--auth-mode', settings.AUTH_MODE,
         '--password', settings.PASSWORD,
         '--output-format', settings.OUTPUT_FORMAT,
+        '--output', settings.OUTPUT,
     ]
     filenames = ['leadership_governance.xlsx']
     for det_file in filenames:
