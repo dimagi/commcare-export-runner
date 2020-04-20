@@ -17,7 +17,8 @@ def main():
         '--batch-size', settings.BATCH_SIZE,
         '--verbose'
     ]
-    det_folder = 'det_configs'
+    # todo: make an input param
+    det_folder = os.path.join('det_configs', 'onse')
     for det_file in os.listdir(det_folder):
         det_file_path = os.path.join(det_folder, det_file)
         command = base_command + ['--query', det_file_path]
