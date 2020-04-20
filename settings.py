@@ -5,6 +5,9 @@ import os
 
 load_dotenv()
 
+DET_FILE_DIRECTORY = os.getenv('DET_FILE_DIRECTORY', 'det_configs')
+
+# commcare-export config
 PROJECT=os.getenv('PROJECT')
 USERNAME=os.getenv('USERNAME')
 PASSWORD=os.getenv('PASSWORD')
