@@ -11,7 +11,7 @@ certifi==2020.4.5.1       # via requests
 cffi==1.14.0              # via cryptography
 chardet==3.0.4            # via requests
 commcare-export==1.2.1    # via -r requirements.in
-cryptography==2.9         # via pyopenssl
+cryptography==3.2         # via pyopenssl
 csv342==1.0.0             # via commcare-export
 decorator==4.4.2          # via jsonpath-rw, sqlalchemy-migrate
 et-xmlfile==1.0.1         # via openpyxl
